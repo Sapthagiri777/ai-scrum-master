@@ -1,0 +1,12 @@
+openai
+python-dotenv
+fastapi
+requests
+pydantic
+sqlalchemy
+jira
+chromadb
+sentence-transformers
+yagmail
+pytest
+flake8
