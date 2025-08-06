@@ -475,7 +475,7 @@ function JiraBoard({ reloadKey }) {
 function BacklogGrooming({ setReloadKey }) {
   const [backlog, setBacklog] = useState([]);
   const [aiResults, setAiResults] = useState({});
-  const [dupes, setDupes] = useState({});
+  const [dupes] = useState({});
   const [selectedKey, setSelectedKey] = useState(null);
   const [editTicket, setEditTicket] = useState(null);
   const [addModalOpen, setAddModalOpen] = useState(false);
