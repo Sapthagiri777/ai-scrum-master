@@ -508,15 +508,6 @@ function BacklogGrooming({ setReloadKey }) {
       .then((result) => setAiResults((r) => ({ ...r, [key]: result })));
   };
 
-  const getDuplicates = (key, summary) => {
-    fetch("http://127.0.0.1:8000/backlog/duplicates", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ key, summary }),
-    })
-      .then((r) => r.json())
-      .then((d) => setDupes((du) => ({ ...du, [key]: d.duplicates })));
-  };
 
   const applySuggestion = (key, ai) => {
     fetch("http://127.0.0.1:8000/backlog/apply_suggestion", {
